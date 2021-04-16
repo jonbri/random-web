@@ -1,8 +1,6 @@
-FROM ubuntu
+FROM node
 WORKDIR /code
-RUN apk add --no-cache nodejs
-RUN npm install yarn
-RUN yarn
+RUN npm install
 EXPOSE 3000
 COPY . .
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
