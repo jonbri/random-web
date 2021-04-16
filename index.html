@@ -10,18 +10,25 @@
     <style>
       body {
         background-color: black;
-        color: white;
+        color: gold;
         font-family: tahoma;
         font-size: 20rem;
+        user-select: none;
       }
     </style>
   </head>
   <body>
     <span id="target"></span>
     <script>
-    var randomNumber = Math.floor(Math.random() * 100) + 1;
+    function getRandomNumber() {
+      var number = Math.floor(Math.random() * 100) + 1;
+      return number.toString();
+    }
     var target = document.getElementById("target");
-    target.innerHTML = randomNumber.toString();
+    target.innerHTML = getRandomNumber();
+    target.onclick = function() {
+      target.innerHTML = getRandomNumber();
+    }
     </script>
   </body>
 </html>
