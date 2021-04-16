@@ -1,0 +1,22 @@
+{
+  "name": "random-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ws --port 3000 --directory . --spa index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonbri/random-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonbri/random-web/issues"
+  },
+  "homepage": "https://github.com/jonbri/random-web#readme",
+  "dependencies": {
+    "local-web-server": "^4.2.1"
+  }
+}

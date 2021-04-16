@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=yes"
+    />
+    <meta charset="UTF-8" />
+    <title>Random</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: tahoma;
+        font-size: 8rem;
+      }
+    </style>
+  </head>
+  <body>
+    Number: <span id="target"></span>
+    <script>
+    var randomNumber = Math.floor(Math.random() * 100) + 1;
+    var target = document.getElementById("target");
+    target.innerHTML = randomNumber.toString();
+    </script>
+  </body>
+</html>
