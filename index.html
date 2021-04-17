@@ -10,10 +10,14 @@
     <style>
       body {
         background-color: black;
-        color: gold;
-        font-family: tahoma;
-        font-size: 20rem;
         user-select: none;
+        text-align: center;
+        -webkit-tap-highlight-color: transparent;
+      }
+      #target {
+        font-size: 20rem;
+        font-family: tahoma;
+        color: pink;
       }
     </style>
   </head>
@@ -21,7 +25,7 @@
     <span id="target"></span>
     <script>
     function getRandomNumber() {
-      var number = Math.floor(Math.random() * 100) + 1;
+      var number = Math.floor(Math.random() * 99) + 1;
       return number.toString();
     }
     var target = document.getElementById("target");
