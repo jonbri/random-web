@@ -26,9 +26,26 @@
     <span id="target"></span>
     <script>
     function getRandomNumber() {
+      console.log('about to fetch...');
+      fetch('/listUsers')
+        .then(function(response) {
+          if (response.status !== 200) {
+            console.log('Looks like there was a problem. Status Code: ' + response.status);
+            return;
+          }
+          // Examine the text in the response
+          response.json().then(function(data) {
+            console.log(data);
+          });
+        })
+        .catch(function(err) {
+          console.log('Fetch Error :-S', err);
+        });
+
       var number = Math.floor(Math.random() * 99) + 1;
       return number.toString();
     }
+
     var target = document.getElementById("target");
     target.innerHTML = getRandomNumber();
     target.onclick = function() {

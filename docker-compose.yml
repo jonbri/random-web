@@ -8,5 +8,6 @@ services:
       - .:/code
   service:
     image: jonbri/random-service_service
-    ports:
-      - "3001:3001"
+    # build: ../random-service
+    volumes:
+      - .:/code
