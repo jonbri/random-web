@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  user-select: none;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+#target {
+  font-size: 16rem;
+  font-family: tahoma;
+  color: pink;
+}
