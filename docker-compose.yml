@@ -6,3 +6,7 @@ services:
       - "3000:3000"
     volumes:
       - .:/code
+  service:
+    image: jonbri/random-service_service
+    ports:
+      - "3001:3001"
